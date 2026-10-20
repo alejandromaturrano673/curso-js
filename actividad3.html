@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-theme="light">
+<html lang="es" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,39 +20,61 @@
       <div class="container">
         <div class="columns is-centered">
           <div class="column is-half">
-            <h1 class="title is-4">Formulario de Cotizacion</h1>
             <form action="" autocomplete="off" id="formulario" class="box">
+              <h1 class="title is-4 has-text-centered mb-5">
+                Formulario de Cotizacion
+              </h1>
               <div class="field">
                 <label for="nombre" class="label">Nombre Completo</label>
-                <input id="nombre" class="input" type="text" required />
+                <input
+                  id="nombre"
+                  class="input"
+                  type="text"
+                  placeholder="Ej. Juan Perez"
+                  required
+                />
               </div>
 
               <div class="field">
                 <label for="email" class="label">Correo Electronico </label>
-                <input id="email" class="input" type="email" required />
+                <input
+                  id="email"
+                  class="input"
+                  type="email"
+                  placeholder="Ej. ejemplo@correo.com"
+                  required
+                />
               </div>
 
-              <div class="field">
-                <label for="tipo_equipo" class="label">Tipo de Equipo</label>
-                <div class="select is-fullwidth">
-                  <select id="tipo_equipo" required>
-                    <option value="">Seleccione una opcion</option>
-                    <option value="1">PC</option>
-                    <option value="2">Laptop</option>
-                  </select>
+              <div class="columns">
+                <div class="column">
+                  <div class="field">
+                    <label for="tipo_equipo" class="label"
+                      >Tipo de Equipo</label
+                    >
+                    <div class="select is-fullwidth">
+                      <select id="tipo_equipo" required>
+                        <option value="">Seleccione una opcion</option>
+                        <option value="1">PC</option>
+                        <option value="2">Laptop</option>
+                      </select>
+                    </div>
+                  </div>
                 </div>
-              </div>
 
-              <div class="field">
-                <label for="uso" class="label">Uso Principal</label>
-                <div class="select is-fullwidth">
-                  <select id="uso" required>
-                    <option value="">Seleccione el uso</option>
-                    <option value="1">Oficina</option>
-                    <option value="2">Videojuegos</option>
-                    <option value="3">Diseño Grafico</option>
-                    <option value="4">Programacion</option>
-                  </select>
+                <div class="column">
+                  <div class="field">
+                    <label for="uso" class="label">Uso Principal</label>
+                    <div class="select is-fullwidth">
+                      <select id="uso" required>
+                        <option value="">Seleccione el uso</option>
+                        <option value="1">Oficina</option>
+                        <option value="2">Videojuegos</option>
+                        <option value="3">Diseño Grafico</option>
+                        <option value="4">Programacion</option>
+                      </select>
+                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -60,19 +82,29 @@
                 <label for="presupuesto" class="label"
                   >Presupuesto Estimado (Opcional)</label
                 >
-                <input id="presupuesto" class="input" type="number" min="0" />
+                <input
+                  id="presupuesto"
+                  class="input"
+                  type="number"
+                  min="0"
+                  placeholder="Ej. 1000"
+                />
               </div>
 
               <div class="field">
                 <label for="detalles" class="label"
                   >Detalles o Preferencias (Opcional)</label
                 >
-                <textarea id="detalles" class="textarea"></textarea>
+                <textarea
+                  id="detalles"
+                  class="textarea"
+                  placeholder="Ej. Prefiero componentes de color blanco, necesito que incluya wifi..."
+                ></textarea>
               </div>
 
-              <div>
-                <button type="submit" class="button">Enviar</button>
-                <button type="reset" class="button">Reiniciar</button>
+              <div class="field is-grouped is-grouped-right mt-5">
+                <button type="reset" class="button is-light">Reiniciar</button>
+                <button type="submit" class="button is-link">Enviar</button>
               </div>
             </form>
           </div>
