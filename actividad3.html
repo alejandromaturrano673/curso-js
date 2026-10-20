@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    />
+  </head>
+  <body>
+    <!-- Formulario realizar cotización -->
+    <!-- Compra una PC / portátil -->
+    <!-- Existan campos obligatorios / no obligatorios -->
+    <!-- Generar un cuadro de dialogo con la confirmacion -->
+    <!-- Aplicar estilos CSS -->
+
+    <section class="section">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-half">
+            <h1 class="title is-4">Formulario de Cotizacion</h1>
+            <form action="" autocomplete="off" id="formulario" class="box">
+              <div class="field">
+                <label for="nombre" class="label">Nombre Completo</label>
+                <input id="nombre" class="input" type="text" required />
+              </div>
+
+              <div class="field">
+                <label for="email" class="label">Correo Electronico </label>
+                <input id="email" class="input" type="email" required />
+              </div>
+
+              <div class="field">
+                <label for="tipo_equipo" class="label">Tipo de Equipo</label>
+                <div class="select is-fullwidth">
+                  <select id="tipo_equipo" required>
+                    <option value="">Seleccione una opcion</option>
+                    <option value="1">PC</option>
+                    <option value="2">Laptop</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="uso" class="label">Uso Principal</label>
+                <div class="select is-fullwidth">
+                  <select id="uso" required>
+                    <option value="">Seleccione el uso</option>
+                    <option value="1">Oficina</option>
+                    <option value="2">Videojuegos</option>
+                    <option value="3">Diseño Grafico</option>
+                    <option value="4">Programacion</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="presupuesto" class="label"
+                  >Presupuesto Estimado (Opcional)</label
+                >
+                <input id="presupuesto" class="input" type="number" min="0" />
+              </div>
+
+              <div class="field">
+                <label for="detalles" class="label"
+                  >Detalles o Preferencias (Opcional)</label
+                >
+                <textarea id="detalles" class="textarea"></textarea>
+              </div>
+
+              <div>
+                <button type="submit" class="button">Enviar</button>
+                <button type="reset" class="button">Reiniciar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const formulario = document.getElementById("formulario");
+
+      formulario.addEventListener("submit", function (event) {
+        event.preventDefault();
+        confirm("esta seguro de proceder?");
+      });
+    </script>
+  </body>
+</html>
