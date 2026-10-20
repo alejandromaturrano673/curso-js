@@ -11,7 +11,8 @@ let mascota = {
 
 let { nombre, especie, edad, color } = mascota;
 
-console.log(`nombre  : ${nombre}`);
-console.log(`especie : ${especie}`);
-console.log(`edad    : ${edad} años`);
-console.log(`color   : ${color}`);
+console.log("* Datos de una mascota");
+console.log(`  nombre  : ${nombre}`);
+console.log(`  especie : ${especie}`);
+console.log(`  edad    : ${edad} años`);
+console.log(`  color   : ${color}`);
